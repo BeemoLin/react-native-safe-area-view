@@ -26,9 +26,9 @@ const { minor = 0 } = PlatformConstants.reactNativeVersion || {};
 const isIPhoneX = (() => {
   if (Platform.OS === 'web') return false;
 
-  if (minor >= 50) {
-    return DeviceInfo.isIPhoneX_deprecated;
-  }
+  // if (minor >= 50) {
+  //   return DeviceInfo.isIPhoneX_deprecated;
+  // }
 
   return (
     Platform.OS === 'ios' &&
